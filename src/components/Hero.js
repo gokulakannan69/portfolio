@@ -111,6 +111,7 @@ const HeroBio = styled(motion.div)`
 const SocialLinks = styled.div`
   display: flex;
   gap: 25px;
+  margin-top: 30px;
   
   a {
     font-size: 24px;
@@ -121,6 +122,30 @@ const SocialLinks = styled.div`
       transform: translateY(-5px);
       color: ${props => props.theme.accent};
     }
+  }
+`;
+
+const ResumeButton = styled.a`
+  font-family: ${props => props.theme.fontMono};
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  background: ${props => props.theme.text};
+  color: ${props => props.theme.background};
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  
+  &:hover {
+    background: transparent;
+    color: ${props => props.theme.text};
+    box-shadow: inset 0 0 0 2px ${props => props.theme.text};
+    transform: translateY(-2px);
   }
 `;
 
@@ -191,6 +216,11 @@ const Hero = () => {
               experiences that are high-performing and user-centric. Currently developing 
               scalable systems using modern architectures and AI integration.
             </p>
+            <div>
+              <ResumeButton href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">
+                VIEW RESUME PDF
+              </ResumeButton>
+            </div>
             <SocialLinks>
               <a href="https://github.com/gokulakannan69" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><FaGithub /></a>
               <a href="https://linkedin.com/in/gokulakannan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><FaLinkedin /></a>
