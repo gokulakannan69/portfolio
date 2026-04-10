@@ -95,15 +95,17 @@ const About = () => {
               viewport={{ once: true }}
             >
               <p>
-                I am <strong>Gokulakannan S</strong>, an aspiring Full-Stack Developer with 
-                strong fundamentals in system design and web technologies. I specialize 
-                in building <strong>structured and scalable</strong> applications using 
-                clean code principles.
+                I am <strong>Gokulakannan S</strong>, a Full-Stack Developer specialized 
+                in building structured and scalable applications. While I leverage advanced 
+                AI tools and LLMs (like <strong>Antigravity</strong>, <strong>Gemini</strong>, 
+                and <strong>GPT-4</strong>) to accelerate development and enhance debugging, 
+                I rely on a deep understanding of core logic and system architecture to 
+                solve real-world problems.
               </p>
               <p>
                 Currently pursuing my B.Tech at <strong>Sri Ramanujar Engineering College</strong>, 
-                I effectively leverage AI tools (like <strong>Antigravity</strong>) to accelerate development 
-                while relying on core logic to solve real-world problems.
+                my process integrates AI-driven efficiency with rigorous, architecture-first 
+                testing to ensure every project is high-performing, user-centric, and maintainable.
               </p>
             </TextBlock>
 

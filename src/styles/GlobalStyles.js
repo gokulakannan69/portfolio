@@ -12,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #000 #fff;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   body {
@@ -21,8 +23,16 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
+    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
   }
 
   section {
@@ -39,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
     letter-spacing: -0.04em;
     line-height: 1;
     color: ${props => props.theme.text};
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
   }
 
   p {

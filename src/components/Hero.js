@@ -179,9 +179,9 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <TitleMask><motion.h1 variants={itemVars}>ENGINEERING</motion.h1></TitleMask>
-          <TitleMask><motion.h1 variants={itemVars}>DIGITAL</motion.h1></TitleMask>
-          <TitleMask><motion.h1 variants={itemVars}>CLARITY.</motion.h1></TitleMask>
+          <TitleMask><motion.h1 variants={itemVars}>CRAFTING</motion.h1></TitleMask>
+          <TitleMask><motion.h1 variants={itemVars}>WITH</motion.h1></TitleMask>
+          <TitleMask><motion.h1 variants={itemVars}>PRECISION.</motion.h1></TitleMask>
         </SplashText>
 
         <ScrollPrompt
@@ -210,11 +210,11 @@ const Hero = () => {
             transition={{ duration: 1, ease: [0.19, 1, 0.22, 1] }}
             viewport={{ once: true }}
           >
-            <h2>GOKULAKANNAN</h2>
+            <h2>GOKULAKANNAN S</h2>
             <p>
-              I am a Full-Stack Developer focused on building intentional, digital 
-              experiences that are high-performing and user-centric. Currently developing 
-              scalable systems using modern architectures and AI integration.
+              Full-Stack Developer focused on building intentional, high-performing 
+              digital experiences. Specialized in building scalable systems by blending 
+              architectural logic with AI-fluent development.
             </p>
             <div>
               <ResumeButton href="/files/resume.pdf" target="_blank" rel="noopener noreferrer">

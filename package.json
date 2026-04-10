@@ -22,7 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && wrangler pages deploy build"
+    "deploy": "npm run build && npx wrangler pages deploy build --project-name gokulakannan-portfolio"
   },
   "browserslist": {
     "production": [
