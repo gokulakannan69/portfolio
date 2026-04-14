@@ -36,11 +36,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   section {
-    padding: 120px 0;
+    padding: 80px 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (min-width: 768px) {
+      padding: 120px 0;
+    }
   }
 
   h1, h2, h3, h4, h5, h6 {

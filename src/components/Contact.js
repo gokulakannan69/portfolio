@@ -56,13 +56,17 @@ const InfoItem = styled.div`
 
 const ContactForm = styled.form`
   background: ${props => props.theme.background};
-  padding: 50px;
+  padding: 30px;
   border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.cardShadow};
   border: ${props => props.theme.cardBorder};
   display: flex;
   flex-direction: column;
   gap: 25px;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
 `;
 
 const FormGroup = styled.div`

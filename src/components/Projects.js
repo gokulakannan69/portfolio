@@ -23,17 +23,28 @@ const ProjectsGrid = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @media (min-width: 1200px) {
     grid-template-columns: repeat(6, 1fr);
   }
 `;
 
 const CardWrapper = styled(motion.div)`
-  grid-column: span 3;
+  grid-column: span 1;
   position: relative;
   transform-style: preserve-3d;
+
+  @media (min-width: 1200px) {
+    grid-column: span 3;
+  }
   
   &:nth-child(3) {
+    @media (min-width: 1024px) {
+      grid-column: span 3;
+    }
     @media (min-width: 1200px) {
       grid-column: span 6;
     }

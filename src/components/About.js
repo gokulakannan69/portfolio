@@ -45,14 +45,19 @@ const TextBlock = styled(motion.div)`
 
 const DetailGrid = styled(motion.div)`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 30px;
   margin-top: 50px;
-  padding: 40px;
+  padding: 25px;
   background: ${props => props.theme.background};
   border-radius: ${props => props.theme.borderRadius};
   box-shadow: ${props => props.theme.cardShadow};
   border: ${props => props.theme.cardBorder};
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+  }
 `;
 
 const DetailItem = styled.div`
