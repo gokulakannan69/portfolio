@@ -10,10 +10,10 @@ const Nav = styled(motion.nav)`
   top: 0;
   width: 100%;
   height: ${theme.navHeight};
-  background: ${props => props.scrolled ? 'rgba(5, 5, 5, 0.85)' : 'transparent'};
-  backdrop-filter: ${props => props.scrolled ? 'blur(10px)' : 'none'};
-  box-shadow: ${props => props.scrolled ? theme.shadow : 'none'};
-  border-bottom: ${props => props.scrolled ? theme.glassBorder : '1px solid transparent'};
+  background: ${props => props.$scrolled ? 'rgba(5, 5, 5, 0.85)' : 'transparent'};
+  backdrop-filter: ${props => props.$scrolled ? 'blur(10px)' : 'none'};
+  box-shadow: ${props => props.$scrolled ? theme.shadow : 'none'};
+  border-bottom: ${props => props.$scrolled ? theme.glassBorder : '1px solid transparent'};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -144,7 +144,7 @@ const Navbar = () => {
 
   return (
     <Nav
-      scrolled={scrolled}
+      $scrolled={scrolled}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
