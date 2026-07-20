@@ -15,8 +15,8 @@ const ScrollButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: ${props => props.visible ? '1' : '0'};
-  transform: ${props => props.visible ? 'translateY(0)' : 'translateY(100px)'};
+  opacity: ${props => props.$visible ? '1' : '0'};
+  transform: ${props => props.$visible ? 'translateY(0)' : 'translateY(100px)'};
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1000;
   box-shadow: 0 4px 15px rgba(0, 247, 255, 0.2);
@@ -29,7 +29,7 @@ const ScrollButton = styled.button`
     height: 100%;
     background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
     transform: translateY(100%);
-    animation: ${props => props.isScrolling ? 'swipeUp 1.5s infinite' : 'none'};
+    animation: ${props => props.$isScrolling ? 'swipeUp 1.5s infinite' : 'none'};
   }
 
   @keyframes swipeUp {
@@ -45,7 +45,7 @@ const ScrollButton = styled.button`
   }
 
   &:hover {
-    transform: ${props => props.visible ? 'translateY(-5px)' : 'translateY(100px)'};
+    transform: ${props => props.$visible ? 'translateY(-5px)' : 'translateY(100px)'};
     box-shadow: 0 8px 25px rgba(0, 247, 255, 0.4);
   }
 
@@ -93,8 +93,8 @@ const ScrollToTop = () => {
 
   return (
     <ScrollButton 
-      visible={visible} 
-      isScrolling={isScrolling}
+      $visible={visible} 
+      $isScrolling={isScrolling}
       onClick={scrollToTop}
     >
       <FaArrowUp color="#1e1e1e" />
