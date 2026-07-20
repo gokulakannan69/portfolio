@@ -1,0 +1,12 @@
+name = "gokul-portfolio"
+pages_build_output_dir = "build"
+compatibility_date = "2024-02-08"
+
+[vars]
+REACT_APP_NAME = "Portfolio"
+REACT_APP_DESCRIPTION = "Gokul's Personal Portfolio"
+REACT_APP_GITHUB_URL = "https://github.com/gokulakannan69?tab=repositories"
+REACT_APP_LINKEDIN_URL = "https://www.linkedin.com/feed/"
+REACT_APP_EMAIL = "gokulkannangk28@gmail.com"
+REACT_APP_PHONE = "+919361443302"
+# Note: Secrets like REACT_APP_EMAIL_SERVICE_ID should be added via the Cloudflare Dashboard or 'wrangler secret put'
