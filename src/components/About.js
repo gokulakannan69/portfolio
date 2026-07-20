@@ -119,7 +119,7 @@ const About = () => {
           data-aos-delay="200"
         >
           <img
-            src="/images/profile.jpg"
+            src="/images/profile.jpeg"
             alt="Gokulakannan - Full Stack AI Developer"
           />
         </ProfileImage>
