@@ -41,7 +41,8 @@ const Title = styled.h2`
   &::after {
     content: '';
     display: block;
-    width: 300px;
+    flex: 1;
+    max-width: 300px;
     height: 1px;
     background: ${theme.darkGray};
     margin-left: 20px;
