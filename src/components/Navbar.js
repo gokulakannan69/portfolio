@@ -85,8 +85,8 @@ const MobileMenu = styled(motion.div)`
   flex-direction: column;
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100vw;
+  left: 0;
+  width: 100%;
   height: 100vh;
   background: ${theme.background};
   padding: 5rem 2rem;
@@ -143,33 +143,35 @@ const Navbar = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <Nav
-      $scrolled={scrolled}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <Logo>Gokul</Logo>
+    <>
+      <Nav
+        $scrolled={scrolled}
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Logo>Gokul</Logo>
 
-      <NavMenu>
-        {menuItems.map((item) => (
-          <NavLink
-            key={item.to}
-            to={item.to}
-            smooth={true}
-            duration={500}
-            spy={true}
-            activeClass="active"
-            offset={-70}
-          >
-            {item.title}
-          </NavLink>
-        ))}
-      </NavMenu>
+        <NavMenu>
+          {menuItems.map((item) => (
+            <NavLink
+              key={item.to}
+              to={item.to}
+              smooth={true}
+              duration={500}
+              spy={true}
+              activeClass="active"
+              offset={-70}
+            >
+              {item.title}
+            </NavLink>
+          ))}
+        </NavMenu>
 
-      <MenuButton onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-        {mobileMenuOpen ? '✕' : '☰'}
-      </MenuButton>
+        <MenuButton onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? '✕' : '☰'}
+        </MenuButton>
+      </Nav>
 
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -196,7 +198,7 @@ const Navbar = () => {
           </MobileMenu>
         )}
       </AnimatePresence>
-    </Nav>
+    </>
   );
 };
 
